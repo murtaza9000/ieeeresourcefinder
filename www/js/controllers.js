@@ -33,24 +33,10 @@ angular.module('starter.controllers', ['starter.services'])
   };
 })
 
-.controller('PlaylistsCtrl', function($scope) {
-  $scope.playlists = [
-    { title: 'Reggae', id: 1 },
-    { title: 'Chill', id: 2 },
-    { title: 'Dubstep', id: 3 },
-    { title: 'Indie', id: 4 },
-    { title: 'Rap', id: 5 },
-    { title: 'Cowbell', id: 6 }
-  ];
+.controller('ResourcesCtrl', function($scope, Resource) {
+    $scope.resources = Resource.query();
 })
 
-.controller('SessionsCtrl', function($scope, Session) {
-    $scope.sessions = Session.query();
+.controller('ResourceCtrl', function($scope, $stateParams, Resource) {
+    $scope.resource = Resource.get({resourceId: $stateParams.resourceId});
 })
-
-.controller('SessionCtrl', function($scope, $stateParams, Session) {
-    $scope.session = Session.get({sessionId: $stateParams.sessionId});
-})
-
-.controller('PlaylistCtrl', function($scope, $stateParams) {
-});

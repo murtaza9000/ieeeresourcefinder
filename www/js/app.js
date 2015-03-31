@@ -57,34 +57,25 @@ angular.module('starter', ['ionic', 'starter.controllers'])
       }
     })
 
-    .state('app.sessions', {
-      url: "/sessions",
+    .state('app.resources', {
+      url: "/resources",
       views: {
           'menuContent': {
-              templateUrl: "templates/sessions.html",
-              controller: 'SessionsCtrl'
+              templateUrl: "templates/resources.html",
+              controller: 'ResourcesCtrl'
           }
       }
     })
 
-    .state('app.session', {
-      url: "/sessions/:sessionId",
+    .state('app.resource', {
+      url: "/resources/:resourceId",
       views: {
           'menuContent': {
-            templateUrl: "templates/session.html",
-            controller: 'SessionCtrl'
+            templateUrl: "templates/resource.html",
+            controller: 'ResourceCtrl'
         }
       }
   })
-  .state('app.single', {
-    url: "/playlists/:playlistId",
-    views: {
-      'menuContent': {
-        templateUrl: "templates/playlist.html",
-        controller: 'PlaylistCtrl'
-      }
-    }
-  });
   // if none of the above states are matched, use this as the fallback
-  $urlRouterProvider.otherwise('/app/sessions');
+  $urlRouterProvider.otherwise('/app/resources');
 });
