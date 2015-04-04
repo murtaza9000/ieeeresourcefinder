@@ -41,6 +41,11 @@ var categories = [
 		id: 3,
 		name: "Important Websites",
 		sub_categories: []
+	},
+	{
+		id: 4,
+		name: "career Resources",
+		sub_categories: []
 	}
 ]
 
