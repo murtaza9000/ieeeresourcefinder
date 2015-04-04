@@ -24,12 +24,22 @@ angular.module('starter.services', ['ngResource'])
 var categories = [
 	{
 		id : 0,
-		name: "Calendar",
-		sub_categories: [1,2]
+		name: "Website hosting Resources",
+		sub_categories: [4,5,6]
 	},
 	{
 		id: 1,
-		name: "Tafreeh",
+		name: "Design Resources",
+		sub_categories: []
+	},
+	{
+		id: 2,
+		name: "Template Resource",
+		sub_categories: []
+	},
+	{
+		id: 3,
+		name: "Important Websites",
 		sub_categories: []
 	}
 ]
@@ -45,7 +55,11 @@ var questions = [
 var resources = [
 	{
 		id: 0,
-		name: "Test Resource",
-		category: 1
+		name: "Free website host",
+		description:"xyz",
+		category: 0
+	},
+	{
+
 	}
 ]
