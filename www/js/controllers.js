@@ -37,6 +37,31 @@ angular.module('starter.controllers', ['starter.services'])
     $scope.resources = Resource.query();
 })
 
+.controller('CategoriesCtrl', function($scope, $stateParams, Resource) {
+    if ($stateParams.categoryId == -1){
+      $scope.categories = Resource.queryCategories(0);
+      
+    }else{
+      $scope.categories = Resource.getSubCategoriesOf($stateParams.categoryId);
+    }
+    
+})
+
+.controller('WizardCtrl', function($scope, $stateParams, Resource) {
+    if ($stateParams.wizardId == -1){
+      $scope.wizard = Resource.queryWizard(0);
+      
+    }else{
+      $scope.wizard = Resource.getSubWizardOf($stateParams.wizardId);
+    }
+    
+})
+
 .controller('ResourceCtrl', function($scope, $stateParams, Resource) {
     $scope.resource = Resource.get({resourceId: $stateParams.resourceId});
+})
+
+.controller('SearchCtrl', function($scope,  Resource) {
+    $scope.searchText = "";
+    $scope.resources = Resource.query();
 })

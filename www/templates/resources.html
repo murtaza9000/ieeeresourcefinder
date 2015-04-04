@@ -1,10 +1,21 @@
 <ion-view view-title="Resources">
   <ion-content>
-    <ion-list>
-      <ion-item ng-repeat="resource in resources" href="#/app/resources/{{resource.id}}">
-        {{resource.name}}
-        {{resource.id}}
-      </ion-item>
-    </ion-list>
-  </ion-content>
+		<div class="list card">
+			<a href="#/app/wizard/-1" class="item">
+				Wizard
+			</a>
+
+			<a href="#" class="item">
+				Tree View
+			</a>
+
+			<a href="#/app/categories/-1" class="item">
+				Category View
+			</a>
+
+			<a href="#/app/search" class="item">
+				Search
+			</a>
+		</div>
+	</ion-content>
 </ion-view>

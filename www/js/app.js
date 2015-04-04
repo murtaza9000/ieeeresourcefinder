@@ -30,15 +30,6 @@ angular.module('starter', ['ionic', 'starter.controllers'])
     controller: 'AppCtrl'
   })
 
-  .state('app.search', {
-    url: "/search",
-    views: {
-      'menuContent': {
-        templateUrl: "templates/search.html"
-      }
-    }
-  })
-
   .state('app.browse', {
     url: "/browse",
     views: {
@@ -47,12 +38,22 @@ angular.module('starter', ['ionic', 'starter.controllers'])
       }
     }
   })
-    .state('app.playlists', {
-      url: "/playlists",
+    .state('app.categories', {
+      url: "/categories/:categoryId",
       views: {
         'menuContent': {
-          templateUrl: "templates/playlists.html",
-          controller: 'PlaylistsCtrl'
+          templateUrl: "templates/categories.html",
+          controller: 'CategoriesCtrl'
+        }
+      }
+    })
+
+    .state('app.wizard', {
+      url: "/wizard/:wizardId",
+      views: {
+        'menuContent': {
+          templateUrl: "templates/wizard.html",
+          controller: 'WizardCtrl'
         }
       }
     })
@@ -63,6 +64,16 @@ angular.module('starter', ['ionic', 'starter.controllers'])
           'menuContent': {
               templateUrl: "templates/resources.html",
               controller: 'ResourcesCtrl'
+          }
+      }
+    })
+
+    .state('app.search', {
+      url: "/search",
+      views: {
+          'menuContent': {
+              templateUrl: "templates/search.html",
+              controller: 'SearchCtrl'
           }
       }
     })
