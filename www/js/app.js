@@ -48,6 +48,16 @@ angular.module('starter', ['ionic', 'starter.controllers'])
       }
     })
 
+    .state('app.tree', {
+      url: "/tree",
+      views: {
+        'menuContent': {
+          templateUrl: "templates/tree.html",
+          controller: 'TreeCtrl'
+        }
+      }
+    })
+
     .state('app.wizard', {
       url: "/wizard/:wizardId",
       views: {

@@ -47,6 +47,10 @@ angular.module('starter.controllers', ['starter.services'])
     
 })
 
+.controller('TreeCtrl', function($scope, Resource) {
+    $scope.categories = Resource.queryAllCategories();
+})
+
 .controller('WizardCtrl', function($scope, $stateParams, Resource) {
     if ($stateParams.wizardId == -1){
       $scope.wizard = Resource.queryWizard(0);

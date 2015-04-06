@@ -5,6 +5,14 @@ angular.module('starter.services', ['ngResource'])
 	    query: function() {
 	      return resources;
 	    },
+	    queryAllCategories: function(){
+	    	var result = [];
+			angular.forEach(categories, function(value, key) {
+			  	this.push(value);
+			}, result);
+	    	return result;
+	    },
+
 	    queryCategories: function(level){
 	    	var result = [];
 			angular.forEach(categories, function(value, key) {
@@ -196,7 +204,7 @@ var wizard = [
 	{	
 		id: 40,
 		name: "I want to create Resume ",
-		link: "www.ieee.org/mentoring",
+		link: "http://www.ieee.org/mentoring",
 		answers: [38]
 	},
 	{	
