@@ -93,7 +93,7 @@ var wizard = [
 	{
 		id: 0,
 		name: "I am a Volunteer",
-		answers: [2],
+		answers: [30,33,34,43],
 		level: 0
 	},
 	{
@@ -102,9 +102,10 @@ var wizard = [
 		answers: [2,3,4,5,6,7,8,9],
 		level: 0
 	},
+	{
 		id: 2,
 		name: "I am looking for design resources",
-		answers: [3],
+		answers: [3]
 	},
 	{
 		id: 3,
@@ -144,12 +145,108 @@ var wizard = [
 	{
 		id: 30,
 		name: "I am looking IEEE Support Center ",
+		answers: [31,32]
+	},
+	{	id: 31,
+		name: "I want Auto Call Back ",
 		answers: []
 	},
-		id: 31,
-		name: "I am looking IEEE Support Center ",
+	{	
+		id: 32,
+		name: "I want Live Chat ",
+		answers: []
+	},
+	{	
+		id: 33,
+		name: "I want IEEE Distinguished Lecturers Program ",
+		answers: []
+	},
+	{	
+		id: 34,
+		name: "I am looking for career resources ",
+		answers: [35,37,39,41]
+	},
+	{	
+		id: 35,
+		name: "Looking for a job ",
+		answers: [36]
+	},
+	{	
+		id: 36,
+		name: "IEEE Job Site ",
+		link: "careers.ieee.org",
+		answers: []
+	},
+	{	
+		id: 37,
+		name: "I want to create Resume ",
+		answers: [38]
+	},
+	{	
+		id: 38,
+		name: "IEEE Resume Lab ",
+		link: "www.ieee.org/resumelab",
+		answers: []
+	},
+	{	
+		id: 39,
+		name: "I want to be a Mentor or Needed a Mentor ",
+		answers: [40]
+	},
+	{	
+		id: 40,
+		name: "I want to create Resume ",
+		link: "www.ieee.org/mentoring",
+		answers: [38]
+	},
+	{	
+		id: 41,
+		name: "I need Career Guidance  ",
+		answers: [42]
+	},
+	{	
+		id: 42,
+		name: "Knowledge resources Career Guidance @ The Institute",
+		link: "http://theinstitute.ieee.org/career-and-education",
+		answers: []
+	},
+		{	
+		id: 43,
+		name: "Looking for a education/Leadership",
+		//link: "http://theinstitute.ieee.org/career-and-education",
+		answers: [44,47,48]
+	},
+	{	
+		id: 44,
+		name: "Free Educational services",
+		link: "http://www.ieee.org/Loginforms/msdna/login.html",
+		answers: [45,46]
+	},
+	{	
+		id: 45,
+		name: "Google Apps@IEEE",
+		link: "http://www.ieee.org/membership_services/membership/products/googleapps.html",
+		answers: []
+	},
+	{	
+		id: 46,
+		name: "MSDN",
+		link: "http://www.ieee.org/Loginforms/msdna/login.html",
+		answers: []
+	},
+	{	
+		id: 47,
+		name: "IEEE Distinguished Lecturers Program",
+		link: "http:// 	www.ieee.org/about/volunteers/tab/distinguished_lecturer_program.html",
+		answers: []
+	},
+	{	
+		id: 48,
+		name: "IEEE Volunteer Training",
+		link: "http://www.ieee.org/about/volunteers/training/volunteer_training_index.html",
 		answers: []
 	}
+
 ]
 // Data
 var categories = [
