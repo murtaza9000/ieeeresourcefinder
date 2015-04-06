@@ -99,10 +99,9 @@ var wizard = [
 	{
 		id: 1,
 		name: "I am a Branch Officer",
-		answers: [],
+		answers: [2,3,4,5,6,7,8,9],
 		level: 0
 	},
-	{
 		id: 2,
 		name: "I am looking for design resources",
 		answers: [3],
@@ -110,6 +109,45 @@ var wizard = [
 	{
 		id: 3,
 		name: "I want to design a template?",
+		answers: []
+	},
+	{
+		id: 4,
+		name: "I am looking for MemberShip Development",
+		answers: []
+	},
+	{
+		id: 5,
+		name: "I want to know IEEE Student Branches by Region",
+		answers: []
+	},
+	{
+		id: 6,
+		name: "Applying and information for S-PAC",
+		answers: []
+	},
+	{
+		id: 7,
+		name: "IEEE Member-Get-a-Member (MGM) ",
+		answers: []
+	},
+	{
+		id: 8,
+		name: "My Responsibility ",
+		answers: []
+	},
+	{
+		id: 9,
+		name: "Important Dates ",
+		answers: []
+	},
+	{
+		id: 30,
+		name: "I am looking IEEE Support Center ",
+		answers: []
+	},
+		id: 31,
+		name: "I am looking IEEE Support Center ",
 		answers: []
 	}
 ]
