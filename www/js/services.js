@@ -101,13 +101,13 @@ var wizard = [
 	{
 		id: 0,
 		name: "I am a Volunteer",
-		answers: [30,33,34,43],
+		answers: [30,33,34,43,55,58],
 		level: 0
 	},
 	{
 		id: 1,
 		name: "I am a Branch Officer",
-		answers: [2,3,4,5,6,7,8,9],
+		answers: [2,4,5,6,7,8,9,19],
 		level: 0
 	},
 	{
@@ -118,36 +118,127 @@ var wizard = [
 	{
 		id: 3,
 		name: "I want to design a template?",
+		link:"",
+		answers: [10,14,15]
+	},
+	{
+		id: 10,
+		name: "You want visual guidance?",
+		link:"",
+		answers: [11,12,13]
+	},
+	{
+		id: 11,
+		name: "Visual identity guidelines quick reference guide",
+		link:"http://www.ieee.org/documents/ieee_quick_reference_guide.pdf",
+		answers: []
+	},
+{
+		id: 12,
+		name: "Visual identity guidelines",
+		link:"http://www.ieee.org/documents/ieee_visual_guidelines.pdf",
+		answers: []
+	},
+
+	{
+		id: 13,
+		name: "Tagline Videos",
+		link:"http://www.ieee.org/about/toolkit/brand/videos.html",
+		answers: []
+	},
+	{
+		id: 14,
+		name: "Power Point template",
+		link:"http://www.ieee.org/documents/ieee_powerpoint_template.zip",
+		answers: []
+	},
+	{
+		id: 15,
+		name: "All other templates",
+		link:"http://www.ieee.org/about/toolkit/tools/index.html",
 		answers: []
 	},
 	{
 		id: 4,
 		name: "I am looking for MemberShip Development",
+		answers: [16,17,18]
+	},
+	{
+		id: 16,
+		name: "You want MD Officer Training",
+		link:"http://www.ieee.org/secure/documents/2013_membership_volunteer_training.ppt",
+		answers: []
+	},
+	{
+		id: 17,
+		name: "Recuitment Best practice",
+		link:"http://www.ieee.org/about/volunteers/membership_development/recruit_bestpractices.html",
+		answers: []
+	},
+	{
+		id: 18,
+		name: "Retention Best practice",
+		link:"http://www.ieee.org/about/volunteers/membership_development/retention_bestpractices.html",
 		answers: []
 	},
 	{
 		id: 5,
 		name: "I want to know IEEE Student Branches by Region",
+		link:"http://www.ieee.org/membership_services/membership/students/branches/DF_IEEE_MIG_MCT_70595",
 		answers: []
 	},
 	{
 		id: 6,
 		name: "Applying and information for S-PAC",
+		link:"http://www.ieeeusa.org/volunteers/committees/spac/budget_forms.html",
 		answers: []
 	},
 	{
 		id: 7,
 		name: "IEEE Member-Get-a-Member (MGM) ",
+		link:"http://www.ieee.org/membership_services/membership/join/mgm.html",
 		answers: []
 	},
 	{
 		id: 8,
 		name: "My Responsibility ",
+		link:"http://www.ieee.org/membership_services/membership/students/branches/officers.html",
 		answers: []
 	},
 	{
 		id: 9,
 		name: "Important Dates ",
+		link:"http://www.ieee.org/membership_services/membership/students/st_calendar-student_branch_development.pdf",
+		answers: []
+	},
+	{
+		id: 19,
+		name: "I want website for my SB ",
+	//	link:"http://www.ieee.org/membership_services/membership/students/st_calendar-student_branch_development.pdf",
+		answers: [20,21,22,23]
+	},
+	{
+		id: 20,
+		name: "For webmaster ",
+		link:"http://www.ieee.org/about/webteam/index.html",
+		answers: []
+	},
+	{
+		id: 21,
+		name: "Free website host. ",
+		link:"http://sites.ieee.org/hosting/",
+		answers: []
+	},
+	{
+		id: 22,
+		name: " WordPress Editor’s guide ",
+		link:"http://sites.ieee.org/files/2011/04/WordPress-Editors-Guide-WL.pdf",
+		answers: []
+	},
+	{
+		id: 23,
+		name: "The IEEE Sites WordPress theme ",
+		link:"http://sites.ieee.org/files/2014/06/ieee-wp-theme-documentation20140516.pdf ",
 		answers: []
 	},
 	{
@@ -166,8 +257,9 @@ var wizard = [
 	},
 	{	
 		id: 33,
-		name: "I want IEEE Distinguished Lecturers Program ",
-		answers: []
+		name: "I am looking for technical societies",
+		link :"https://www.ieee.org/membership_services/membership/societies/index.html",
+		answers: [51]
 	},
 	{	
 		id: 34,
@@ -182,7 +274,7 @@ var wizard = [
 	{	
 		id: 36,
 		name: "IEEE Job Site ",
-		link: "careers.ieee.org",
+		link: "http://careers.ieee.org",
 		answers: []
 	},
 	{	
@@ -222,13 +314,13 @@ var wizard = [
 		id: 43,
 		name: "Looking for a education/Leadership",
 		//link: "http://theinstitute.ieee.org/career-and-education",
-		answers: [44,47,48]
+		answers: [44,47,49]
 	},
 	{	
 		id: 44,
-		name: "Free Educational services",
+		name: " Educational services",
 		link: "http://www.ieee.org/Loginforms/msdna/login.html",
-		answers: [45,46]
+		answers: [45,46,53,54]
 	},
 	{	
 		id: 45,
@@ -244,17 +336,95 @@ var wizard = [
 	},
 	{	
 		id: 47,
+		name: "Students Webinar",
+		link: "http://www.ieee.org/membership_services/membership/students/student_webinars.html",
+		answers: []
+	},
+	{	
+		id: 48,
 		name: "IEEE Distinguished Lecturers Program",
 		link: "http:// 	www.ieee.org/about/volunteers/tab/distinguished_lecturer_program.html",
 		answers: []
 	},
 	{	
-		id: 48,
+		id: 49,
 		name: "IEEE Volunteer Training",
 		link: "http://www.ieee.org/about/volunteers/training/volunteer_training_index.html",
+		answers: [48,50]
+	},
+
+	{	
+		id: 50,
+		name: "IEEE Center for Leadership Excellence",
+		link: "https://ieee-elearning.org/CLE/",
+		answers: []
+	},
+
+	{	
+		id: 52,
+		name: "What are your interests",
+		link: "https://ieee-elearning.org/CLE/",
 		answers: []
 	}
+	,
 
+	{	
+		id: 53,
+		name: "Are you looking for IEEE eLearning Library",
+		link: "http://www.ieee.org/education_careers/education/elearning_library/index.html",
+		answers: []
+	}
+	,
+
+	{	
+		id: 54,
+		name: "Are you looking for online education portal",
+		link: "http://ieee-elearning.org/outreach/",
+		answers: []
+	},
+
+	{	
+		id: 55,
+		name: "I want to know what's happening in IEEE",
+		//link: "https://ieee-elearning.org/CLE/",
+		answers: [56,57]
+	},
+
+	{	
+		id: 56,
+		name: "I want to know Conferences and events",
+		link: "http://www.ieee.org/conferences_events/index.html",
+		answers: []
+	},
+
+	{	
+		id: 57,
+		name: "I want Scholarships, Grants, and Fellowships",
+		link: "http://www.ieee.org/membership_services/membership/students/awards/index.html",
+		answers: []
+	},
+
+	{	
+		id: 58,
+		name: "Do you want to be a part of WIE",
+		//link: "http://www.ieee.org/membership_services/membership/students/awards/index.html",
+		answers: [59,60]
+	},
+
+	{	
+		id: 59,
+		name: "Are you looking For WIE Resources",
+		link: "http://www.ieee.org/membership_services/membership/women/women_resources.html",
+		answers: []
+	},
+
+	{	
+		id: 60,
+		name: "Are you looking For WIE Membership servicess",
+		link: "http://www.ieee.org/membership_services/membership/women/women_in_engineering.html",
+		answers: []
+	}
+	
 ]
 // Data
 var categories = [
