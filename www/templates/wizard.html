@@ -1,12 +1,14 @@
- <ion-view view-title="Wizard">
+ <ion-view view-title="WIZARD">
  	<ion-content>
 	 	<ion-list>
 	 		<div ng-repeat="w in wizard">
-	 			<ion-item href="#/app/wizard/{{w.id}}" ng-show="w.answers.length">
-			     	<h2>{{w.name}}</h2>
-					<p>
-						<a href="{{w.link}}">{{w.link}}</a>
-					</p>
+	 			<ion-item href="#/app/wizard/{{w.id}}" ng-show="w.answers.length" class="item-icon-left item-icon-right">
+			     	
+			     	<i style="color: #48B4F7;" class="icon ion-information-circled"></i>
+			     	{{w.name}} 
+			     	<i class="icon ion-arrow-right-b"
+			     	style="color: #48B4F7;"></i>
+					
 			    </ion-item>
 
 			    <ion-item class="item-dark"  ng-hide="w.answers.length">

@@ -1,5 +1,10 @@
 /* Empty. Add your own CSS if you like */
-
+body {
+	font-family: 'Oswald', sans-serif;
+}
+h2 {
+	font-family: 'Oswald', sans-serif;	
+}
 .header1 {
 	height: 25%; 
 	background:url(../img/blue1.jpg);
@@ -57,7 +62,19 @@
   text-align: center;
   color:white;
   padding: 0 auto;
-  font-size: 3.2em;
+  font-size: 3.5em;
 
 
+}
+
+.item.item-dark{
+border-color: #2D2D2D;
+  background-color: #4A4A4C;
+}
+.title {
+
+}
+
+.item-content {
+	background-color: #333;
 }
