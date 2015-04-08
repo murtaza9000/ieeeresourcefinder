@@ -3,7 +3,7 @@ angular.module('starter.controllers', ['starter.services'])
 .controller('AppCtrl', function($scope, $ionicModal, $timeout) {
   // Form data for the login modal
   $scope.loginData = {};
-
+  $scope.iframeHeight = window.innerHeight - 89;
   // Create the login modal that we will use later
   $ionicModal.fromTemplateUrl('templates/login.html', {
     scope: $scope
