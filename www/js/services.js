@@ -64,8 +64,10 @@ angular.module('starter.services', ['ngResource'])
 	    	//Get Sub List
 	    	angular.forEach(categories, function(value, key) {
 				if (value.id === id){
-					for (var i = 0; i < value.sub_categories.length; i++){
-						this.push(value.sub_categories[i]);
+					if (value.sub_categories){
+						for (var i = 0; i < value.sub_categories.length; i++){
+							this.push(value.sub_categories[i]);
+						}
 					}
 				}
 			}, subList);
@@ -133,7 +135,7 @@ var wizard = [
 		link:"http://www.ieee.org/documents/ieee_quick_reference_guide.pdf",
 		answers: []
 	},
-{
+	{
 		id: 12,
 		name: "Visual identity guidelines",
 		link:"http://www.ieee.org/documents/ieee_visual_guidelines.pdf",
@@ -150,7 +152,8 @@ var wizard = [
 		id: 14,
 		name: "Power Point template",
 		link:"http://www.ieee.org/documents/ieee_powerpoint_template.zip",
-		answers: []
+		answers: [],
+
 	},
 	{
 		id: 15,
@@ -438,6 +441,7 @@ var categories = [
 		id: 7,
 		name: "Branch Officer Resources",
 		level: 0,
+		sub_categories: [],
 	},
 	{
 		id : 0,
