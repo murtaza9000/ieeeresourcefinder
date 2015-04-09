@@ -460,7 +460,7 @@ var categories = [
 		id: 2,
 		name: "Branch Officer Resources",
 		level: 0,
-		sub_categories: [5],
+		sub_categories: [5,6,7,8,9,10,11,12,13,14,16],
 	},{
 		id: 3,
 		name: "IEEE YP",
@@ -488,31 +488,31 @@ var categories = [
 	{
 		id: 6,
 		name: "Design Resources",
-		sub_categories: [],
+		sub_categories: [21,22,23,24,25],
 		//level: 0
 	},
 	{
 		id: 7,
 		name: "Membership Development",
-		sub_categories: [],
+		sub_categories: [26,27,28],
 		//level: 0
 	},
 	{
 		id: 8,
 		name: "Important Websites",
-		sub_categories: [],
+		sub_categories: [30,31,32],
 		//level: 0
-	},
-	{
-		id: 9,
-		name: "Membership Development",
-		sub_categories: [],
-		//level: 0
-	},
+	}, 
+	//{
+	//	id: 9,
+	//	name: "Membership Development",
+	//	sub_categories: [],
+	//	//level: 0
+	//},
 	{
 		id: 10,
 		name: "Important Dates",
-		sub_categories: [],
+		sub_categories: [43],
 		//level: 0
 	},
 	{
@@ -523,7 +523,7 @@ var categories = [
 	},
 	{
 		id: 12,
-		name: "Student Branches by Region",
+	name: "Student Branches by Region",
 		sub_categories: [],
 		//level: 0
 	},
@@ -539,12 +539,12 @@ var categories = [
 		sub_categories: [],
 		//level: 0
 	},
-	{
-		id: 16,
-		name: "career Resources",
-		sub_categories: [],
-		//level: 0
-	},
+	//{
+	//	id: 16,
+	//	name: "career Resources",
+	//	sub_categories: [],
+	//	//level: 0
+	//},
 	//Website resource: 5 from 17 -20
 	{
 		id: 17,
@@ -576,62 +576,150 @@ var categories = [
 		id: 21,
 		name: "Visual identity guidelines quick reference guide",
 		link:"http://www.ieee.org/documents/ieee_quick_reference_guide.pdf",
-		answers: []
+		sub_categories: [],
 	},
 	{
 		id: 22,
 		name: "Visual identity guidelines",
 		link:"http://www.ieee.org/documents/ieee_visual_guidelines.pdf",
-		answers: []
+		sub_categories: [],
 	},
 
 	{
 		id: 23,
 		name: "Tagline Videos",
 		link:"http://www.ieee.org/about/toolkit/brand/videos.html",
-		answers: []
+		sub_categories: [],
 	},
 	{
 		id: 24,
 		name: "Power Point template",
 		link:"http://www.ieee.org/documents/ieee_powerpoint_template.zip",
-		answers: [],
+		sub_categories: [],
 
 	},
 	{
 		id: 25,
 		name: "All other templates",
 		link:"http://www.ieee.org/about/toolkit/tools/index.html",
-		answers: []
+		sub_categories: [],
 	},
 	///////////////////////////////////////////////////////////////////////////////////////////
-	///////////////template reosurce: 7 from 26-28
+	///////////////Membership reosurce: 7 from 26-28
 	{
 		id: 26,
 		name: "MD Officer Training",
 		link:"http://www.ieee.org/secure/documents/2013_membership_volunteer_training.ppt",
-		answers: []
+		sub_categories: [],
 	},
 	{
 		id: 27,
 		name: "Recuitment Best practice",
 		link:"http://www.ieee.org/about/volunteers/membership_development/recruit_bestpractices.html",
-		answers: []
+		sub_categories: [],
 	},
 	{
 		id: 28,
 		name: "Retention Best practice",
 		link:"http://www.ieee.org/about/volunteers/membership_development/retention_bestpractices.html",
-		answers: []
+	sub_categories: [],
 	},
 	{
 		id: 29,
 		name: "Member benefits",
 		link:"http://www.ieee.org/about/volunteers/membership_development/secure/11memb_0353membershipflyer_r1.pdf",
-		answers: []
-	}
+		sub_categories: [],
+	},
 	///////////////////////////////////////////////////////////////////////////////////////////
-	///////////////template reosurce: 7 from 26-28
+	///////////////Important website reosurce: 8 from 30-32
+	{
+		id: 30,
+		name: "IEEE TV",
+		link:"https://ieeetv.ieee.org/",
+		sub_categories: [],
+	},
+	{
+		id: 31,
+		name: "IEEE Xtreme",
+		link:"http://www.ieee.org/membership_services/membership/students/competitions/xtreme/57664_IEEEXtreme24HourProgrammingChallenge.html",
+	sub_categories: [],
+	},
+	{
+		id: 32,
+		name: "Regional Websites",
+		//link:"http://www.ieee.org/membership_services/membership/students/competitions/xtreme/57664_IEEEXtreme24HourProgrammingChallenge.html",
+		sub_categories: [33,34,35,36,37,38,39,40,41,42],
+	},
+	{
+		id: 33,
+		name: "Region 1 (Northeastern U.S.) ",
+		link:"https://www.ieee.org/societies_communities/geo_activities/regional_list_region_1.html",
+		sub_categories: [],
+	},
+	
+	{
+		id: 34,
+		name: " Region 2 (Eastern U.S.)",
+		link:"https://www.ieee.org/societies_communities/geo_activities/regional_list_region_2.html",
+		sub_categories: [],
+	},
+	{
+		id: 35,
+		name: " Region 3 (Southern U.S)",
+		link:"https://www.ieee.org/societies_communities/geo_activities/regional_list_region_3.html",
+		sub_categories: [],
+	},
+	{
+		id: 36,
+		name: " Region 4 (Central U.S.)",
+		link:"https://www.ieee.org/societies_communities/geo_activities/regional_list_region_4.html",
+		sub_categories: [],
+	},
+	{
+		id: 37,
+		name: "Region 5 (Southwestern U.S.)",
+		link:"https://www.ieee.org/societies_communities/geo_activities/regional_list_region_5.html",
+	sub_categories: [],
+	},
+	{
+		id: 38,
+		name: " Region 6 (Western U.S.)",
+		link:"https://www.ieee.org/societies_communities/geo_activities/regional_list_region_6.html",
+		sub_categories: [],
+	},
+	{
+		id: 39,
+		name: " Region 7 (Canada)",
+		link:"https://www.ieee.org/societies_communities/geo_activities/regional_list_region_7.html",
+	sub_categories: [],
+	},
+	{
+		id: 40,
+		name: "Region 8 (Africa, Europe, Middle East)",
+		link:"https://www.ieee.org/societies_communities/geo_activities/regional_list_region_8.html",
+	sub_categories: [],
+	},
+	{
+		id: 41,
+		name: " Region 9 (Latin America)",
+		link:"https://www.ieee.org/societies_communities/geo_activities/regional_list_region_9.html",
+		sub_categories: [],
+	},
+	{
+		id: 42,
+		name: "IEEE Region 10 (Asia and Pacific)",
+		link:"https://www.ieee.org/societies_communities/geo_activities/regional_list_region_10.html",
+		sub_categories: [],
+	},
+	////////////////////////////////
+	///////////Important Dates 10 43-
+	{
+		id: 43,
+		name: "Important Dates",
+		link :"http://www.ieee.org/membership_services/membership/students/st_calendar-student_branch_development.pdf",
+		sub_categories: [],
+		//level: 0
+	},
 ]
 
 var questions = [
