@@ -291,18 +291,26 @@ var wizard = [
 	},
 	{	id: 31,
 		name: "I want Auto Call Back ",
+		link: "http://www.ieee.org/about/contact/autocallbackform.html",
 		answers: []
 	},
 	{	
 		id: 32,
 		name: "I want Live Chat ",
+		link:" http://supportcenter.ieee.org/app/chat/chat_launch",
 		answers: []
 	},
 	{	
 		id: 33,
 		name: "I am looking for technical societies",
+		//link :"https://www.ieee.org/membership_services/membership/societies/index.html",
+		answers: [133]
+	},
+	{	
+		id: 133,
+		name: "technical societies",
 		link :"https://www.ieee.org/membership_services/membership/societies/index.html",
-		answers: [51]
+		answers: []
 	},
 	{	
 		id: 34,
@@ -357,13 +365,13 @@ var wizard = [
 		id: 43,
 		name: "Looking for a education/Leadership",
 		//link: "http://theinstitute.ieee.org/career-and-education",
-		answers: [44,47,49]
+		answers: [44,49]
 	},
 	{	
 		id: 44,
 		name: " Educational services",
 		link: "http://www.ieee.org/Loginforms/msdna/login.html",
-		answers: [45,46,53,54]
+		answers: [45,46,53,54,47]
 	},
 	{	
 		id: 45,
@@ -475,24 +483,24 @@ var categories = [
 		id: 1,
 		name: "Volunteer Resources",
 		level: 0,
-		sub_categories: []
+		sub_categories: [46,51]
 	},
 	{
 		id: 2,
 		name: "Branch Officer Resources",
 		level: 0,
-		sub_categories: [5,6,7,8,9,10,11,12,13,14,16],
+		sub_categories: [5,6,7,8,9,10,11,12,16],
 	},{
 		id: 3,
-		name: "IEEE YP",
+		name: "IEEE YP (Young Professionals)	",
 		level: 0,
-		sub_categories: [],
+		sub_categories: [67],
 	},
 	{
 		id: 4,
-		name: "IEEE WIE",
+		name: "IEEE WIE (women in engineering)",
 		level: 0,
-		sub_categories: [],
+		sub_categories: [64],
 	},
 	{
 		id: 15,
@@ -539,26 +547,26 @@ var categories = [
 	{
 		id: 11,
 		name: "Student Branch awards",
-		sub_categories: [],
+		sub_categories: [44],
 		//level: 0
 	},
 	{
 		id: 12,
 	name: "Student Branches by Region",
-		sub_categories: [],
+		sub_categories: [45],
 		//level: 0
 	},
 	{
 		id: 13,
 		name: "IEEE events",
-		sub_categories: [],
-		//level: 0
+		sub_categories: [61],
+		level: 0
 	},
 	{
 		id: 14,
 		name: "IEEE societies and communities",
-		sub_categories: [],
-		//level: 0
+		sub_categories: [49],
+		level: 0
 	},
 	//{
 	//	id: 16,
@@ -733,14 +741,200 @@ var categories = [
 		sub_categories: [],
 	},
 	////////////////////////////////
-	///////////Important Dates 10 43-
+	///////////Important Dates 10  from 43-
+		{
+			id: 43,
+			name: "Important Dates",
+			link :"http://www.ieee.org/membership_services/membership/students/st_calendar-student_branch_development.pdf",
+			sub_categories: [],
+			//level: 0
+		},
+		////////////////////////////////
+	///////////IStudent Branch awards 11 from 44
 	{
-		id: 43,
-		name: "Important Dates",
-		link :"http://www.ieee.org/membership_services/membership/students/st_calendar-student_branch_development.pdf",
+		id: 44,
+		name: "Student Branch awards",
+		link :"https://www.ieee.org/membership_services/membership/students/awards/student_branch_awards.html",
 		sub_categories: [],
 		//level: 0
 	},
+		////////////////////////////////
+	///////////IStudent Branch awards 13 from 45
+	{
+		id: 45,
+		name: "Student Branch awards",
+		link :"http://www.ieee.org/membership_services/membership/students/branches/DF_IEEE_MIG_MCT_70595",
+		sub_categories: [],
+		//level: 0
+	},
+	////////////////////volunteer Resources 1
+	///////////IEEE Support from 46-48
+	{
+		id: 46,
+		name: " IEEE Support Center ",
+		sub_categories	: [47,48]
+	},
+	{	id: 47,
+		name: "Auto Call Back ",
+		link: "http://www.ieee.org/about/contact/autocallbackform.html",
+		sub_categories: []
+	},
+	{	
+		id: 48,
+		name: "Live Chat ",
+		link:" http://supportcenter.ieee.org/app/chat/chat_launch",
+		sub_categories: []
+	},
+		////////////////////////////////
+///////////technical societies from 49-50
+	{	
+		id: 49,
+		name: "Technical societies and communities	",
+		//link :"https://www.ieee.org/membership_services/membership/societies/index.html",
+		sub_categories	: [50],
+	},
+	{	
+		id: 50,
+		name: "technical societies",
+		link :"https://www.ieee.org/membership_services/membership/societies/index.html",
+		sub_categories	: []
+	},
+	/////////////////////////////
+	/////////////////Educational	51-60
+		{	
+		id: 51,
+		name: "Education/Leadership",
+		//link: "http://theinstitute.ieee.org/career-and-education",
+		sub_categories	: [52,57]
+	},
+	{	
+		id: 52,
+		name: " Educational services",
+		//link: "http://www.ieee.org/Loginforms/msdna/login.html",
+		sub_categories	: [53,54,55,59,60]
+	},
+	{	
+		id: 53,
+		name: "Google Apps@IEEE",
+		link: "http://www.ieee.org/membership_services/membership/products/googleapps.html",
+		sub_categories	: []
+	},
+	{	
+		id: 54,
+		name: "MSDN",
+		link: "http://www.ieee.org/Loginforms/msdna/login.html",
+		sub_categories	: []
+	},
+	{	
+		id: 55,
+		name: "Students Webinar",
+		link: "http://www.ieee.org/membership_services/membership/students/student_webinars.html",
+		sub_categories	: []
+	},
+	{	
+		id: 56,
+		name: "IEEE Distinguished Lecturers Program",
+		link: "http:// 	www.ieee.org/about/volunteers/tab/distinguished_lecturer_program.html",
+		sub_categories	: []
+	},
+	{	
+		id: 57,
+		name: "IEEE Volunteer Training",
+		link: "http://www.ieee.org/about/volunteers/training/volunteer_training_index.html",
+		sub_categories	: [58,56]
+	},
+
+	{	
+		id: 58,
+		name: "IEEE Center for Leadership Excellence",
+		link: "https://ieee-elearning.org/CLE/",
+		sub_categories	: []
+	},
+
+	
+
+	{	
+		id: 59,
+		name: "Are you looking for IEEE eLearning Library",
+		link: "http://www.ieee.org/education_careers/education/elearning_library/index.html",
+		sub_categories	: []
+	},
+	{	
+		id: 60,
+		name: "Are you looking for online education portal",
+		link: "http://ieee-elearning.org/outreach/",
+		sub_categories	: []
+	},
+	/////////////////////////////////////////////
+	////////////IEEE events 13 from 61-63
+	{	
+		id: 61,
+		name: "I want to know what's happening in IEEE",
+		//link: "https://ieee-elearning.org/CLE/",
+		sub_categories: [62,63]
+	},
+
+	{	
+		id: 62,
+		name: "I want to know Conferences and events",
+		link: "http://www.ieee.org/conferences_events/index.html",
+		sub_categories: []
+	},
+
+	{	
+		id: 63,
+		name: "I want Scholarships, Grants, and Fellowships",
+		link: "http://www.ieee.org/membership_services/membership/students/awards/index.html",
+		sub_categories: []
+	},
+//////////////////////////////////////
+//////////wie 4 from 64-66
+	{	
+		id: 64,
+		name: "WIE",
+		//link: "http://www.ieee.org/membership_services/membership/students/awards/index.html",
+		sub_categories: [65,66]
+	},
+
+	{	
+		id: 65,
+		name: " WIE Resources",
+		link: "http://www.ieee.org/membership_services/membership/women/women_resources.html",
+		sub_categories: []
+	},
+
+	{	
+		id: 66,
+		name: " WIE Membership servicess",
+		link: "http://www.ieee.org/membership_services/membership/women/women_in_engineering.html",
+		sub_categories: []
+	},
+
+	///////////////////////////////////////////
+	//////////////IEEE YP 3 67-68
+
+		{	
+		id: 67,
+		name: " IEEE YP",
+		link: "http://www.ieee.org/membership_services/membership/young_professionals/index.html",
+		sub_categories: [68]
+	},
+	{	
+		id: 68,
+		name: " IEEE Student Transition & Elevation Partnership (STEP)",
+		link: "http://www.ieee.org/membership_services/membership/young_professionals/step.html",
+		sub_categories: []
+	},
+///////////////////////////////////////////
+	//////////////IEEE MGM 3 69
+
+		{	
+		id: 69,
+		name: " IEEE MGM",
+		link: "http://www.ieee.org/membership_services/membership/join/mgm.html",
+		sub_categories: []
+	}
+
 ]
 
 var questions = [
