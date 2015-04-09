@@ -336,7 +336,7 @@ var wizard = [
 	{	
 		id: 38,
 		name: "IEEE Resume Lab ",
-		link: "www.ieee.org/resumelab",
+		link: "http://www.ieee.org/resumelab",
 		answers: []
 	},
 	{	
@@ -346,7 +346,7 @@ var wizard = [
 	},
 	{	
 		id: 40,
-		name: "I want to create Resume ",
+		name: "Mentor/Mentoring Program	",
 		link: "http://www.ieee.org/mentoring",
 		answers: [38]
 	},
@@ -483,13 +483,13 @@ var categories = [
 		id: 1,
 		name: "Volunteer Resources",
 		level: 0,
-		sub_categories: [46,51]
+		sub_categories: [46,51,16]
 	},
 	{
 		id: 2,
 		name: "Branch Officer Resources",
 		level: 0,
-		sub_categories: [5,6,7,8,9,10,11,12,16],
+		sub_categories: [5,6,7,8,9,10,11,12,16,74,80],
 	},{
 		id: 3,
 		name: "IEEE YP (Young Professionals)	",
@@ -506,7 +506,7 @@ var categories = [
 		id: 15,
 		name: "IEEE Member-Get-a-Member",
 		level: 0,
-		sub_categories: [],
+		sub_categories: [69],
 	},
 	{
 		id : 5,
@@ -568,12 +568,12 @@ var categories = [
 		sub_categories: [49],
 		level: 0
 	},
-	//{
-	//	id: 16,
-	//	name: "career Resources",
-	//	sub_categories: [],
-	//	//level: 0
-	//},
+	{
+		id: 16,
+		name: "Career Resources",
+		sub_categories: [71,72,73,70],
+		//level: 0
+	},
 	//Website resource: 5 from 17 -20
 	{
 		id: 17,
@@ -855,13 +855,13 @@ var categories = [
 
 	{	
 		id: 59,
-		name: "Are you looking for IEEE eLearning Library",
+		name: " IEEE eLearning Library",
 		link: "http://www.ieee.org/education_careers/education/elearning_library/index.html",
 		sub_categories	: []
 	},
 	{	
 		id: 60,
-		name: "Are you looking for online education portal",
+		name: "Online education portal",
 		link: "http://ieee-elearning.org/outreach/",
 		sub_categories	: []
 	},
@@ -933,8 +933,97 @@ var categories = [
 		name: " IEEE MGM",
 		link: "http://www.ieee.org/membership_services/membership/join/mgm.html",
 		sub_categories: []
+	},
+	////////////////////////////////////////////
+	//////////career resources 16 70 - 13
+	
+	
+	{	
+		id: 70,
+		name: "IEEE Job Site ",
+		link: "http://careers.ieee.org",
+	sub_categories: []
+	},
+	
+	{	
+		id:71,
+		name: "IEEE Resume Lab ",
+		link: "http://www.ieee.org/resumelab",
+		sub_categories: []
+	},
+	
+	{	
+		id: 72,
+		name: "Mentor/mentoring	Program	 ",
+		link: "http://www.ieee.org/mentoring",
+		sub_categories: []
+	},
+	
+	{	
+		id: 73,
+		name: "Knowledge resources Career Guidance @ The Institute",
+		link: "http://theinstitute.ieee.org/career-and-education",
+		sub_categories: []
+	},
+	////////////////////////////////////////////////////////////////
+	//////////////misc 74-75
+{	
+		id: 74,
+		name: "IEEE Geographic Unit Formation Policies and Petitions",
+		//link: "http://www.ieee.org/societies_communities/geo_activities/forms_petitions/forms_petitions_index.html",
+		sub_categories: [75]
+	},
+	{	
+		id: 75,
+		name: "IEEE Geographic Unit Formation Policies and Petitions",
+		link: "http://www.ieee.org/societies_communities/geo_activities/forms_petitions/forms_petitions_index.html",
+		sub_categories: []
+	},
+	{	
+		id: 76,
+		name: "IEEE Websites",
+		//link: "http://ieeexplore.ieee.org/",
+		sub_categories: [77,78,79],
+		level	: 0,
 	}
-
+	,
+	{	
+		id: 77,
+		name: "IEEE Xplore",
+		link: "http://ieeexplore.ieee.org/",
+		sub_categories: []
+	}
+	,
+	{	
+		id: 78,
+		name: "IEEE Spectrum",
+		link: "http://spectrum.ieee.org/",
+		sub_categories: []
+	},
+	{
+		id: 79,
+		name: "IEEE TV",
+		link:"https://ieeetv.ieee.org/",
+		sub_categories: [],
+	},
+	{
+		id: 80,
+		name: "Reporting tool ",
+		link:"http://sites.ieee.org/files/2014/06/ieee-wp-theme-documentation20140516.pdf ",
+		sub_categories: [81,82]
+	},
+	{
+		id: 81,
+		name: "  SB reporting ",
+		link:"https://officers.vtools.ieee.org ",
+	sub_categories: [],
+	},
+	{
+		id: 82,
+		name: "Officers reporting ",
+		link:"https://sbr.vtools.ieee.org ",
+		sub_categories: [],
+	}
 ]
 
 var questions = [
