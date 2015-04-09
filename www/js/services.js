@@ -109,8 +109,26 @@ var wizard = [
 	{
 		id: 1,
 		name: "I am a Branch Officer",
-		answers: [2,4,5,6,7,8,9,19],
+		answers: [24,2,4,5,6,7,8,9,19],
 		level: 0
+	},
+	{
+		id: 24,
+		name: "I want to do reporting ",
+		link:"http://sites.ieee.org/files/2014/06/ieee-wp-theme-documentation20140516.pdf ",
+		answers: [25,26]
+	},
+	{
+		id: 25,
+		name: " Are you looking for SB reporting ",
+		link:"https://officers.vtools.ieee.org ",
+		answers: []
+	},
+	{
+		id: 26,
+		name: "Are you looking officers reporting ",
+		link:"https://sbr.vtools.ieee.org ",
+		answers: []
 	},
 	{
 		id: 2,
@@ -244,6 +262,7 @@ var wizard = [
 		link:"http://sites.ieee.org/files/2014/06/ieee-wp-theme-documentation20140516.pdf ",
 		answers: []
 	},
+
 	{
 		id: 30,
 		name: "I am looking IEEE Support Center ",
@@ -432,47 +451,187 @@ var wizard = [
 // Data
 var categories = [
 	{
-		id: 6,
+		id: 1,
 		name: "Volunteer Resources",
 		level: 0,
-		sub_categories: [0,1,2,3]
+		sub_categories: []
 	},
 	{
-		id: 7,
+		id: 2,
 		name: "Branch Officer Resources",
+		level: 0,
+		sub_categories: [5],
+	},{
+		id: 3,
+		name: "IEEE YP",
 		level: 0,
 		sub_categories: [],
 	},
 	{
-		id : 0,
+		id: 4,
+		name: "IEEE WIE",
+		level: 0,
+		sub_categories: [],
+	},
+	{
+		id: 15,
+		name: "IEEE Member-Get-a-Member",
+		level: 0,
+		sub_categories: [],
+	},
+	{
+		id : 5,
 		name: "Website hosting Resources",
-		sub_categories: [4,5,6],
+		sub_categories: [17,18,19,20],
 		//level: 0
 	},
 	{
-		id: 1,
+		id: 6,
 		name: "Design Resources",
 		sub_categories: [],
 		//level: 0
 	},
 	{
-		id: 2,
-		name: "Template Resource",
+		id: 7,
+		name: "Membership Development",
 		sub_categories: [],
 		//level: 0
 	},
 	{
-		id: 3,
+		id: 8,
 		name: "Important Websites",
 		sub_categories: [],
 		//level: 0
 	},
 	{
-		id: 4,
+		id: 9,
+		name: "Membership Development",
+		sub_categories: [],
+		//level: 0
+	},
+	{
+		id: 10,
+		name: "Important Dates",
+		sub_categories: [],
+		//level: 0
+	},
+	{
+		id: 11,
+		name: "Student Branch awards",
+		sub_categories: [],
+		//level: 0
+	},
+	{
+		id: 12,
+		name: "Student Branches by Region",
+		sub_categories: [],
+		//level: 0
+	},
+	{
+		id: 13,
+		name: "IEEE events",
+		sub_categories: [],
+		//level: 0
+	},
+	{
+		id: 14,
+		name: "IEEE societies and communities",
+		sub_categories: [],
+		//level: 0
+	},
+	{
+		id: 16,
 		name: "career Resources",
 		sub_categories: [],
 		//level: 0
+	},
+	//Website resource: 5 from 17 -20
+	{
+		id: 17,
+		name: "For webmaster ",
+		link:"http://www.ieee.org/about/webteam/index.html",
+		
+	},
+	{
+		id: 18,
+		name: "Free website host. ",
+		link:"http://sites.ieee.org/hosting/",
+		
+	},
+	{
+		id: 19,
+		name: " WordPress Editor’s guide ",
+		link:"http://sites.ieee.org/files/2011/04/WordPress-Editors-Guide-WL.pdf",
+		
+	},
+	{
+		id: 20,
+		name: "The IEEE Sites WordPress theme ",
+		link:"http://sites.ieee.org/files/2014/06/ieee-wp-theme-documentation20140516.pdf ",
+		
+	},
+	///////////////////////////////////////////////////////////////////////////////////////////
+	///////////////design resource: 6 from 21-25
+	{
+		id: 21,
+		name: "Visual identity guidelines quick reference guide",
+		link:"http://www.ieee.org/documents/ieee_quick_reference_guide.pdf",
+		answers: []
+	},
+	{
+		id: 22,
+		name: "Visual identity guidelines",
+		link:"http://www.ieee.org/documents/ieee_visual_guidelines.pdf",
+		answers: []
+	},
+
+	{
+		id: 23,
+		name: "Tagline Videos",
+		link:"http://www.ieee.org/about/toolkit/brand/videos.html",
+		answers: []
+	},
+	{
+		id: 24,
+		name: "Power Point template",
+		link:"http://www.ieee.org/documents/ieee_powerpoint_template.zip",
+		answers: [],
+
+	},
+	{
+		id: 25,
+		name: "All other templates",
+		link:"http://www.ieee.org/about/toolkit/tools/index.html",
+		answers: []
+	},
+	///////////////////////////////////////////////////////////////////////////////////////////
+	///////////////template reosurce: 7 from 26-28
+	{
+		id: 26,
+		name: "MD Officer Training",
+		link:"http://www.ieee.org/secure/documents/2013_membership_volunteer_training.ppt",
+		answers: []
+	},
+	{
+		id: 27,
+		name: "Recuitment Best practice",
+		link:"http://www.ieee.org/about/volunteers/membership_development/recruit_bestpractices.html",
+		answers: []
+	},
+	{
+		id: 28,
+		name: "Retention Best practice",
+		link:"http://www.ieee.org/about/volunteers/membership_development/retention_bestpractices.html",
+		answers: []
+	},
+	{
+		id: 29,
+		name: "Member benefits",
+		link:"http://www.ieee.org/about/volunteers/membership_development/secure/11memb_0353membershipflyer_r1.pdf",
+		answers: []
 	}
+	///////////////////////////////////////////////////////////////////////////////////////////
+	///////////////template reosurce: 7 from 26-28
 ]
 
 var questions = [
