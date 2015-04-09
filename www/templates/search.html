@@ -8,9 +8,13 @@
 	</div>
 
 	<div class="list card">
-		<a ng-repeat="resource in resources | filter:searchText" class="item">
-			{{resource.name}}
-		</a>
+		<ion-list>
+			<ion-item ng-repeat="resource in resources | filter:searchText" class="item">
+					<h2>{{resource.name}}</h2>
+					<a style="text-decoration: none; color: #9EC8F9;" href="{{resource.link}}">{{resource.link}}</a>
+				</a>
+			</ion-item>
+		</ion-list>
 	</div>
   </ion-content>
 </ion-view>

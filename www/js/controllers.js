@@ -67,5 +67,5 @@ angular.module('starter.controllers', ['starter.services'])
 
 .controller('SearchCtrl', function($scope,  Resource) {
     $scope.searchText = "";
-    $scope.resources = Resource.query();
+    $scope.resources = Resource.allResources();
 })

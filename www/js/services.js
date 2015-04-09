@@ -5,6 +5,27 @@ angular.module('starter.services', ['ngResource'])
 	    query: function() {
 	      return resources;
 	    },
+
+	    allResources: function(){
+	    	var result = [];
+			angular.forEach(categories, function(value, key) {
+				if (value.sub_categories.length === 0){
+					this.push(value);	
+				}
+			  	
+			}, result);
+
+			angular.forEach(wizard, function(value, key) {
+				if (value.answers.length === 0){
+					if (isDuplicate(result, value) === false){
+						this.push(value);
+					}
+				}
+			}, result);
+
+	    	return result;
+	    },
+
 	    queryAllCategories: function(){
 	    	var result = [];
 			angular.forEach(categories, function(value, key) {
@@ -550,7 +571,7 @@ var categories = [
 		id: 17,
 		name: "For webmaster ",
 		link:"http://www.ieee.org/about/webteam/index.html",
-		
+		sub_categories: [],
 	},
 	{
 		id: 18,
@@ -744,3 +765,11 @@ var resources = [
 		category: 0
 	},
 ]
+
+function isDuplicate(array, elem){
+	for (var i = 0; i < array.length; i++){
+		if (array[i].link === elem.link){
+			return true;
+		}
+	}
+}

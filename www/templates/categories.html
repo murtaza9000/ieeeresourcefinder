@@ -1,9 +1,26 @@
  <ion-view view-title="Categories">
  	<ion-content>
 	 	<ion-list>
-	      <ion-item ng-repeat="category in categories" href="#/app/categories/{{category.id}}">
-			{{category.name}}
-	      </ion-item>
+	 		<div ng-repeat="category in categories">
+	 			<ion-item href="#/app/categories/{{category.id}}" ng-show="category.sub_categories.length" 
+	 			class="item-icon-left item-icon-right">
+			     	
+			     	<i style="color: #48B4F7;" class="icon ion-information-circled"></i>
+			     	{{category.name}} 
+			     	<i class="icon ion-arrow-right-b"
+			     	style="color: #48B4F7;"></i>
+					
+			    </ion-item>
+
+			    <ion-item class="item-dark"  ng-hide="category.sub_categories.length">
+			     	<h2 style="color: #fff;">{{category.name}}</h2>
+					<p>
+						<a style="text-decoration: none;
+						color: #9EC8F9;" href="{{category.link}}">{{category.link}}</a>
+					</p>
+			    </ion-item>		
+	 		</div>
+	      
 	    </ion-list>
   	</ion-content>
 </ion-view>
