@@ -556,19 +556,19 @@ var categories = [
 		id: 18,
 		name: "Free website host. ",
 		link:"http://sites.ieee.org/hosting/",
-		
+		sub_categories: [],
 	},
 	{
 		id: 19,
 		name: " WordPress Editor’s guide ",
 		link:"http://sites.ieee.org/files/2011/04/WordPress-Editors-Guide-WL.pdf",
-		
+		sub_categories: [],
 	},
 	{
 		id: 20,
 		name: "The IEEE Sites WordPress theme ",
 		link:"http://sites.ieee.org/files/2014/06/ieee-wp-theme-documentation20140516.pdf ",
-		
+		sub_categories: [],
 	},
 	///////////////////////////////////////////////////////////////////////////////////////////
 	///////////////design resource: 6 from 21-25
