@@ -226,32 +226,32 @@ var wizard = [
 	{
 		id: 5,
 		name: "I want to know IEEE Student Branches by Region",
-		link:"http://www.ieee.org/membership_services/membership/students/branches/DF_IEEE_MIG_MCT_70595",
-		answers: []
+		//link:"http://www.ieee.org/membership_services/membership/students/branches/DF_IEEE_MIG_MCT_70595",
+		answers: [61]
 	},
 	{
 		id: 6,
 		name: "Applying and information for S-PAC",
-		link:"http://www.ieeeusa.org/volunteers/committees/spac/budget_forms.html",
-		answers: []
+		//link:"http://www.ieeeusa.org/volunteers/committees/spac/budget_forms.html",
+		answers: [62]
 	},
 	{
 		id: 7,
 		name: "IEEE Member-Get-a-Member (MGM) ",
-		link:"http://www.ieee.org/membership_services/membership/join/mgm.html",
-		answers: []
+		//link:"http://www.ieee.org/membership_services/membership/join/mgm.html",
+		answers: [63]
 	},
 	{
 		id: 8,
 		name: "My Responsibility ",
-		link:"http://www.ieee.org/membership_services/membership/students/branches/officers.html",
-		answers: []
+		//link:"http://www.ieee.org/membership_services/membership/students/branches/officers.html",
+		answers: [64]
 	},
 	{
 		id: 9,
 		name: "Important Dates ",
-		link:"http://www.ieee.org/membership_services/membership/students/st_calendar-student_branch_development.pdf",
-		answers: []
+		//link:"http://www.ieee.org/membership_services/membership/students/st_calendar-student_branch_development.pdf",
+		answers: [65]
 	},
 	{
 		id: 19,
@@ -348,7 +348,7 @@ var wizard = [
 		id: 40,
 		name: "Mentor/Mentoring Program	",
 		link: "http://www.ieee.org/mentoring",
-		answers: [38]
+		answers: []
 	},
 	{	
 		id: 41,
@@ -394,7 +394,7 @@ var wizard = [
 	{	
 		id: 48,
 		name: "IEEE Distinguished Lecturers Program",
-		link: "http:// 	www.ieee.org/about/volunteers/tab/distinguished_lecturer_program.html",
+		link: "http://www.ieee.org/about/volunteers/tab/distinguished_lecturer_program.html",
 		answers: []
 	},
 	{	
@@ -474,8 +474,38 @@ var wizard = [
 		name: "Are you looking For WIE Membership servicess",
 		link: "http://www.ieee.org/membership_services/membership/women/women_in_engineering.html",
 		answers: []
+	},
+	//****************************************************************************
+	{
+		id: 61,
+		name: "IEEE Student Branches by Region",
+		link:"http://www.ieee.org/membership_services/membership/students/branches/DF_IEEE_MIG_MCT_70595",
+		answers: []
+	},
+	{
+		id: 62,
+		name: "S-PAC",
+		link:"http://www.ieeeusa.org/volunteers/committees/spac/budget_forms.html",
+		answers: []
+	},
+	{
+		id: 63,
+		name: "IEEE Member-Get-a-Member (MGM) ",
+		link:"http://www.ieee.org/membership_services/membership/join/mgm.html",
+		answers: []
+	},
+	{
+		id: 64,
+		name: "My Responsibility ",
+		link:"http://www.ieee.org/membership_services/membership/students/branches/officers.html",
+		answers: []
+	},
+	{
+		id: 65,
+		name: "Important Dates ",
+		link:"http://www.ieee.org/membership_services/membership/students/st_calendar-student_branch_development.pdf",
+		answers: []
 	}
-	
 ]
 // Data
 var categories = [
@@ -834,7 +864,7 @@ var categories = [
 	{	
 		id: 56,
 		name: "IEEE Distinguished Lecturers Program",
-		link: "http:// 	www.ieee.org/about/volunteers/tab/distinguished_lecturer_program.html",
+		link: "http://www.ieee.org/about/volunteers/tab/distinguished_lecturer_program.html",
 		sub_categories	: []
 	},
 	{	
